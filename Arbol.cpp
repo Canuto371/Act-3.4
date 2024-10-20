@@ -97,6 +97,7 @@ void Arbol::leerNodosDesdeArchivo(const string& nombreArchivo) {
 }
 
 // La complejidad en el peor caso es O(n), donde n es el número de nodos en el árbol.
+// Método para realizar el recorrido en inOrden	
 void Arbol::inOrden(Nodo* r, vector<int>& datos) {
     if (r != nullptr) {
         inOrden(r->getLeft(), datos);
